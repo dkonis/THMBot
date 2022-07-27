@@ -21,11 +21,14 @@ echo PASS = %PASS% >> account.conf
 echo:
 echo [93mNote: to update your account credentials change - [100m[37m account.conf [0m[0m[0m 
 
+echo:
+set /p XMLTIME="Set a time for the Scheduled Task to run (Format - 00:00): "
+
 echo ^<?xml version="1.0" encoding="UTF-16"?^> > THMBot.xml
 echo ^<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"^> >> THMBot.xml
 echo   ^<Triggers^> >> THMBot.xml
 echo     ^<CalendarTrigger^> >> THMBot.xml
-echo       ^<StartBoundary^>%date:~6,4%-%date:~3,2%-%date:~0,2%T04:00:00^</StartBoundary^> >> THMBot.xml
+echo       ^<StartBoundary^>%date:~6,4%-%date:~3,2%-%date:~0,2%T%XMLTIME%:00^</StartBoundary^> >> THMBot.xml
 echo       ^<Enabled^>true^</Enabled^> >> THMBot.xml
 echo       ^<ScheduleByDay^> >> THMBot.xml
 echo         ^<DaysInterval^>1^</DaysInterval^> >> THMBot.xml
