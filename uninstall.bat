@@ -13,3 +13,7 @@ echo:
 SCHTASKS /DELETE /TN "THMBot"
 del THMBot.xml
 del account.conf
+del tryhackmebot.log
+RD /S /Q __pycache__
+RD /S /Q .wdm
+RD /s /Q recapchasound

@@ -10,8 +10,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 def main():
     firefox_options = webdriver.FirefoxOptions()
     firefox_options.headless = True
+    firefox_options.set_preference("media.volume_scale", "0.0")
     firefox_options.set_preference("dom.push.enabled", False)
-    firefox_options.add_argument("--mute-audio")
     driver = webdriver.Firefox(service=Service(GeckoDriverManager(path=os.getcwd()).install(), log_path=os.devnull), options=firefox_options)
     driver.implicitly_wait(10)
     os.system("cls" if sys.platform == "win32" else "clear")
