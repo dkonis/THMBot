@@ -19,6 +19,12 @@ that automates the process of checking in everyday in TryHackMe.
 
 THMBot requires [Python3](https://www.python.org/) to run.
 
+Clone the repository:
+
+```sh
+git clone https://github.com/dkonis/THMBot.git
+```
+
 Install the dependencies form requirements.txt:
 
 ```sh
