@@ -11,7 +11,7 @@ that automates the process of checking in everyday in TryHackMe.
 - ReCapcha bypass.
 - Setup Script that creates a scheduled task and an account configuration.
 - Logging the tool's actions and progress.
-- Support for Windows (support for Linux coming soon).
+- Support for Windows (support for Linux is coming soon).
 
 
 
