@@ -3,13 +3,13 @@
 
 [![Python 3.10.4](https://img.shields.io/badge/python-3.10.4-yellow.svg)](https://www.python.org/)
 
-THMBot is a Selenium powered Python tool,
+THMBot is a Selenium powered Python tool,<br />
 that automates the process of checking in everyday in TryHackMe.
 
 ## Features
 
 - ReCapcha bypass.
-- Setup Script that creates a scheduled task and an account configuration.<br />
+- Setup Script that creates a scheduled task and an account configuration.
 - Support for Windows (support for Linux coming soon).
 
 
