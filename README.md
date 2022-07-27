@@ -16,7 +16,7 @@ that automates the process of checking in everyday in TryHackMe.
 
 ## Installation
 
-THMBot requires [Python 3](https://www.python.org/) to run.
+THMBot requires [Python3](https://www.python.org/) to run.
 
 Install the dependencies form requirements.txt:
 
