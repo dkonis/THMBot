@@ -53,6 +53,6 @@ Please enter the run as password for your computer user: <Computer_Password>
 ```
 And you are set!
 
-Note:
+Note:<br />
 the scheduled task will not work if you move the project's folder after setup.<br />
 If you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
