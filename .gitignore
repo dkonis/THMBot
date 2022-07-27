@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#THM
+.wdm/
+recapchasound/
+*.conf
+*.xml
