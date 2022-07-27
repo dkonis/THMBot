@@ -128,7 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#THM
+# THMBot
 .wdm/
 recapchasound/
 *.conf
