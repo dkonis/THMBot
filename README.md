@@ -47,8 +47,12 @@ Set your THM password: <THM_Password>
 
 Note: to update your account credentials change -  account.conf 
 
-Set a time for the Scheduled Task to run (Format - 00:00): <HH:MM>
+Set a time for the Scheduled Task to run (Format - HH:MM): <HH:MM>
 
 Please enter the run as password for your computer user: <Computer_Password>
 ```
 And you are set!
+
+Note:
+the scheduled task will not work if you move the project's folder after setup. 
+if you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
