@@ -9,7 +9,7 @@ that automates the process of checking in everyday in TryHackMe.
 ## Features
 
 - ReCapcha bypass.
-- Setup Script that creates a scheduled task and an account configuration.
+- Setup Script that creates a scheduled task and an account configuration.<br />
 - Support for Windows (support for Linux coming soon).
 
 
@@ -54,5 +54,5 @@ Please enter the run as password for your computer user: <Computer_Password>
 And you are set!
 
 Note:
-the scheduled task will not work if you move the project's folder after setup. 
-if you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
+the scheduled task will not work if you move the project's folder after setup.<br />
+If you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
