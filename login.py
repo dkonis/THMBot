@@ -10,8 +10,8 @@ import speech_recognition
 
 
 def change_type():
-    sound = pydub.AudioSegment.from_mp3(f"{os.getcwd()}\\recapchasound\\sample.wav")
-    sound.export(f"{os.getcwd()}\\recapchasound\\sample.wav", format="wav")
+    sound = pydub.AudioSegment.from_mp3(f"{os.getcwd()}/recapchasound/sample.wav")
+    sound.export(f"{os.getcwd()}/recapchasound/sample.wav", format="wav")
 
 
 def recapcha(driver):
@@ -39,10 +39,10 @@ def recapcha(driver):
         time.sleep(random.uniform(1,3))
         src = driver.find_element(By.XPATH, "/html/body/div/div/div[7]/a").get_attribute("href")
         os.makedirs("recapchasound", exist_ok=True)
-        request.urlretrieve(src, f"{os.getcwd()}\\recapchasound\\sample.wav")
+        request.urlretrieve(src, f"{os.getcwd()}/recapchasound/sample.wav")
         change_type()
 
-        sample_audio = speech_recognition.AudioFile(f"{os.getcwd()}\\recapchasound\\sample.wav")
+        sample_audio = speech_recognition.AudioFile(f"{os.getcwd()}/recapchasound/sample.wav")
         recognize = speech_recognition.Recognizer()
         with sample_audio as source:
             audio = recognize.record(source)

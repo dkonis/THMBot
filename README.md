@@ -11,7 +11,7 @@ that automates the process of checking in everyday in TryHackMe.
 - ReCapcha bypass.
 - Setup Script that creates a scheduled task and an account configuration.
 - The tool's actions and progress are logged.
-- Support for Windows (support for Linux is coming soon).
+- Support for Windows and Linux systems.
 
 
 
@@ -32,11 +32,20 @@ cd THMBot
 pip install -r requirements.txt
 ```
 
-For Windows run setup.bat:
+For Windows systems run setup.bat:
 
 ```cmd
 setup.bat
 ```
+
+For Debian and Ubuntu systems run setup.sh as sudo:<br />
+(For other linux systems you also need to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
+
+```sh
+chmod +x 
+sudo ./setup.sh
+```
+
 Follow the instructions:
 
 ```
@@ -63,6 +72,10 @@ And you are set!
 Note:<br />
 the scheduled task will not work if you move the project's folder after setup.<br />
 If you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
+
+Note:<br />
+To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh for Linux systems.<br />
+Those scripts will revert the project back to the point of cloning and you can delete the project's folder afterwards.
 
 ## Logging
 

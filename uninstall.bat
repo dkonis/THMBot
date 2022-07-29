@@ -11,7 +11,6 @@ echo     888     888    888 888       888 8888888P"   "Y88P"   "Y888 [0m
 
 echo:
 SCHTASKS /DELETE /TN "THMBot"
-del THMBot.xml
 del account.conf
 del tryhackmebot.log
 RD /S /Q __pycache__

@@ -70,3 +70,4 @@ echo ^</Task^> >> THMBot.xml
 
 echo:
 SCHTASKS /CREATE /TN "THMBot" /RU %username% /XML THMBot.xml
+del THMBot.xml
