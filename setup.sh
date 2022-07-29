@@ -14,6 +14,7 @@ echo -e "     888     888    888 888   \"   888 888   d88P Y88..88P Y88b."
 echo -e "     888     888    888 888       888 8888888P\"   \"Y88P\"   \"Y888${NC}"
 
 echo -e
+echo -e
 read -p "Set Your THM Email: " MAIL
 read -sp "Set Your THM Password: " PASS
 
