@@ -22,7 +22,7 @@ echo:
 echo [93mNote: to update your account credentials change - [100m[37m account.conf [0m[0m[0m 
 
 echo:
-set /p XMLTIME="Set a time for the Scheduled Task to run (Format - 00:00): "
+set /p XMLTIME="Set a time for the Scheduled Task to run (Format - HH:MM): "
 
 echo ^<?xml version="1.0" encoding="UTF-16"?^> > THMBot.xml
 echo ^<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"^> >> THMBot.xml
@@ -70,3 +70,4 @@ echo ^</Task^> >> THMBot.xml
 
 echo:
 SCHTASKS /CREATE /TN "THMBot" /RU %username% /XML THMBot.xml
+del THMBot.xml
