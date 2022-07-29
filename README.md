@@ -1,22 +1,29 @@
-# THMBot (for educational purpose only)
+# THMBot (For Educational Purpose Only)
 ## TryHackMe bot for maintaining your streak
 
 [![Python 3.10.4](https://img.shields.io/badge/python-3.10.4-yellow.svg)](https://www.python.org/)
 
-THMBot is a Selenium powered Python tool,
+THMBot is a Selenium powered Python tool,<br />
 that automates the process of checking in everyday in TryHackMe.
 
 ## Features
 
 - ReCapcha bypass.
 - Setup Script that creates a scheduled task and an account configuration.
-- Support for Windows (support for Linux coming soon).
+- The tool's actions and progress are logged.
+- Support for Windows and Linux systems.
 
 
 
 ## Installation
 
-THMBot requires [Python 3](https://www.python.org/) to run.
+THMBot requires [Python3](https://www.python.org/) to run.
+
+Clone the repository:
+
+```sh
+git clone https://github.com/dkonis/THMBot.git
+```
 
 Install the dependencies form requirements.txt:
 
@@ -30,6 +37,15 @@ For Windows run setup.bat:
 ```cmd
 setup.bat
 ```
+
+For Debian and Ubuntu systems run setup.sh as sudo:
+(For other linux systems you also need to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
+
+```sh
+chmod +x 
+sudo ./setup.sh
+```
+
 Follow the instructions:
 
 ```
@@ -47,8 +63,38 @@ Set your THM password: <THM_Password>
 
 Note: to update your account credentials change -  account.conf 
 
-Set a time for the Scheduled Task to run (Format - 00:00): <HH:MM>
+Set a time for the Scheduled Task to run (Format - HH:MM): <HH:MM>
 
 Please enter the run as password for your computer user: <Computer_Password>
 ```
 And you are set!
+
+Note:<br />
+the scheduled task will not work if you move the project's folder after setup.<br />
+If you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
+
+## Logging
+
+When THMBot runs, it logs actions and progress in tryhackmebot.log:
+
+```
+25-07-2022, 20:38:15
+[+] Starting...
+[+] Attempting to Solve Recaptcha
+[+] Recaptcha Passcode: 3 work becomes critical
+[+] Attempting to Solve Recaptcha
+[+] Recaptcha Passcode: software applications ranging
+[+] You Are Logged In!
+[+] Room's Progress Reset
+[+] Success! Your Streak is 40
+[+] Closing...
+
+26-07-2022, 20:40:27
+[+] Starting...
+[+] Attempting to Solve Recaptcha
+[+] Recaptcha Passcode: is directly is pretty up
+[+] You Are Logged In!
+[+] Room's Progress Reset
+[+] Success! Your Streak is 41
+[+] Closing...
+```
