@@ -39,7 +39,7 @@ setup.bat
 ```
 
 For Linux systems run setup.sh as sudo:<br />
-(If you don't have apt you also have to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
+(If you don't have apt you also need to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
 
 ```sh
 chmod +x setup.sh
