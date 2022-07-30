@@ -38,11 +38,11 @@ For Windows systems run setup.bat:
 setup.bat
 ```
 
-For Debian and Ubuntu systems run setup.sh as sudo:<br />
-(For other linux systems you also need to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
+For Linux systems run setup.sh as sudo:<br />
+(If you don't have apt you also have to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
 
 ```sh
-chmod +x 
+chmod +x setup.sh
 sudo ./setup.sh
 ```
 
@@ -70,7 +70,7 @@ Please enter the run as password for your computer user: <Computer_Password>
 And you are set!
 
 Note:<br />
-To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh for Linux systems.<br />
+To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh with sudo permissions for Linux systems.<br />
 Those scripts will revert the project back to the point of cloning and you can delete the project's folder afterwards.
 
 Note:<br />
