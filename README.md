@@ -38,11 +38,11 @@ For Windows systems run setup.bat:
 setup.bat
 ```
 
-For Debian and Ubuntu systems run setup.sh as sudo:<br />
-(For other linux systems you also need to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
+For Linux systems run setup.sh as sudo:<br />
+(If you don't have apt you also need to install FFmpeg manualy from [here](https://ffmpeg.org/download.html#build-linux)).
 
 ```sh
-chmod +x 
+chmod +x setup.sh
 sudo ./setup.sh
 ```
 
@@ -70,12 +70,12 @@ Please enter the run as password for your computer user: <Computer_Password>
 And you are set!
 
 Note:<br />
-the scheduled task will not work if you move the project's folder after setup.<br />
-If you need to change the location, please use uninstall.bat and run setup.bat after the location has changed.
+To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh as sudo for Linux systems.<br />
+Those scripts will revert the project back to the point of cloning and you can delete the project's folder afterwards.
 
 Note:<br />
-To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh for Linux systems.<br />
-Those scripts will revert the project back to the point of cloning and you can delete the project's folder afterwards.
+the scheduled task or Cron Job will not work if you move the project's folder after setup.<br />
+If you need to change the location, please use uninstall.bat/sh and run setup.bat/sh after the location has changed.
 
 ## Logging
 
