@@ -70,7 +70,7 @@ Please enter the run as password for your computer user: <Computer_Password>
 And you are set!
 
 Note:<br />
-To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh with sudo permissions for Linux systems.<br />
+To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh as sudo for Linux systems.<br />
 Those scripts will revert the project back to the point of cloning and you can delete the project's folder afterwards.
 
 Note:<br />
