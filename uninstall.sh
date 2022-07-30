@@ -16,7 +16,7 @@ read -p "Are you sure you want to uninstall THMBot (Y/N): " ANS
 
 if  [ "$ANS" = "Y" ] || [ "$ANS" = "y" ]
 then
-    crontab -l | grep -v '&& python3 main.py'  | crontab -
+    crontab -u $(logname) -l | grep -v '&& python3 main.py'  | crontab -u $(logname) -
     rm account.conf
     rm tryhackmebot.log
     rm -rf __pycache__

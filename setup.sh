@@ -14,7 +14,6 @@ echo -e "     888     888    888 888   \"   888 888   d88P Y88..88P Y88b."
 echo -e "     888     888    888 888       888 8888888P\"   \"Y88P\"   \"Y888${NC}"
 
 echo -e
-echo -e
 read -p "Set Your THM Email: " MAIL
 read -sp "Set Your THM Password: " PASS
 
@@ -29,8 +28,13 @@ echo -e "${YELLOW}Note: to update your account credentials change - account.conf
 echo -e
 read -p "Set a time for the Cron Job to run (Format - HH:MM): " CRONTIME
 
+echo -e
+echo -e
+echo -e "${YELLOW}Note: to update your Cron Job type - crontab -l${NC}"
+
 PART=(${CRONTIME//:/ })
 
-crontab -l |{ cat; echo "${PART[1]} ${PART[0]} * * * cd $(pwd;) && python3 main.py";} | crontab -
+crontab -u $(logname) -l | grep -v '&& python3 main.py'  | crontab -u $(logname) -
+crontab -u $(logname) -l |{ cat; echo "${PART[1]} ${PART[0]} * * * cd $(pwd;) && python3 main.py";} | crontab -u $(logname) -
 
 apt install ffmpeg
