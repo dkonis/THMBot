@@ -30,7 +30,7 @@ read -p "Set a time for the Cron Job to run (Format - HH:MM): " CRONTIME
 
 echo -e
 echo -e
-echo -e "${YELLOW}Note: to update your Cron Job type - crontab -l${NC}"
+echo -e "${YELLOW}Note: to update your Cron Job type - crontab -e${NC}"
 
 PART=(${CRONTIME//:/ })
 

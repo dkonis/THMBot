@@ -17,7 +17,7 @@ that automates the process of checking in everyday in TryHackMe.
 
 ## Installation
 
-THMBot requires [Python3](https://www.python.org/) to run.
+THMBot requires [Python3](https://www.python.org/) and [Firefox](https://www.mozilla.org/en-US/firefox/new/) to run.
 
 Clone the repository:
 
@@ -69,13 +69,6 @@ Please enter the run as password for your computer user: <Computer_Password>
 ```
 And you are set!
 
-Note:<br />
-To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh as sudo for Linux systems.<br />
-Those scripts will revert the project back to the point of cloning and you can delete the project's folder afterwards.
-
-Note:<br />
-the scheduled task or Cron Job will not work if you move the project's folder after setup.<br />
-If you need to change the location, please use uninstall.bat/sh and run setup.bat/sh after the location has changed.
 
 ## Logging
 
@@ -102,3 +95,10 @@ When THMBot runs, it logs actions and progress in tryhackmebot.log:
 [+] Success! Your Streak is 41
 [+] Closing...
 ```
+
+## Notes
+
+- To uninstall you can use the uninstall.bat script for Windows systems and the uninstall.sh as sudo for Linux systems.<br />Those scripts will revert the project back to the point of cloning, then you can delete the project's folder.
+- the scheduled task or Cron Job will not work if you move the project's folder after setup.<br />
+If you need to change the location, please use uninstall.bat/sh and run setup.bat/sh after the location has changed.
+- Currently you have to join this [room](https://tryhackme.com/room/polkit) to be able to run THMBot (will be fixed soon).
