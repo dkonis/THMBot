@@ -1,4 +1,4 @@
-# THMBot (For Educational Purpose Only)
+# THMBot (For Educational Purposes Only)
 ## TryHackMe bot for maintaining your streak
 
 [![Python 3.10.4](https://img.shields.io/badge/python-3.10.4-yellow.svg)](https://www.python.org/)
