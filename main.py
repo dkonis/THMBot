@@ -9,7 +9,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 def main():
     firefox_options = webdriver.FirefoxOptions()
-    firefox_options.headless = True
+    firefox_options.add_argument('-headless')
     firefox_options.set_preference("media.volume_scale", "0.0")
     firefox_options.set_preference("dom.push.enabled", False)
     driver = webdriver.Firefox(service=Service(GeckoDriverManager(path=os.getcwd()).install(), log_path=os.devnull), options=firefox_options)
