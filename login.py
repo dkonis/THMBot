@@ -59,10 +59,15 @@ def recapcha(driver):
         pass
     driver.switch_to.default_content()
 
-
 def login_form(driver):
-    config = configparser.ConfigParser()
-    config.read("account.conf")
+    if os.path.exists(r'account.conf'):
+        config = configparser.ConfigParser()
+        config.read("account.conf")
+    else:
+        with open("tryhackmebot.log", 'a') as f:
+            print("[+] Cannot load config. Please run setup.")
+            f.write("[+] Cannot load config. Please run setup\n")
+            exit(1)
     try:
         driver.get("https://tryhackme.com/login")
         time.sleep(random.uniform(3,6))

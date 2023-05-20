@@ -2,21 +2,15 @@ import sys
 import datetime
 from login import *
 from keepstreak import *
-from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
-from webdriver_manager.firefox import GeckoDriverManager
+from browser import *
 
 
 def main():
-    firefox_options = webdriver.FirefoxOptions()
-    firefox_options.headless = True
-    firefox_options.set_preference("media.volume_scale", "0.0")
-    firefox_options.set_preference("dom.push.enabled", False)
-    driver = webdriver.Firefox(service=Service(GeckoDriverManager(path=os.getcwd()).install(), log_path=os.devnull), options=firefox_options)
+    driver = get_driver()
     driver.implicitly_wait(10)
     os.system("cls" if sys.platform == "win32" else "clear")
 
-    with open("tryhackmebot.log", 'a') as f:
+    with open("tryhackmebot.log", 'w') as f:
         print("[+] Starting...")
         date = datetime.datetime.now().strftime("%d-%m-%Y, %H:%M:%S")
         f.write(f"{date}\n")
